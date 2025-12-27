@@ -5,14 +5,14 @@
   },
   "metadata": {
     "description": "Project lifecycle management: learn, incubate, create repos",
-    "version": "1.0.1"
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "project-manager",
       "source": "./",
-      "description": "Track and manage external repos. Commands: /project learn, /project incubate, /project create",
-      "version": "1.0.1"
+      "description": "Track and manage external repos. Commands: /project, /learn (deep dive documentation)",
+      "version": "1.1.0"
     }
   ]
 }
