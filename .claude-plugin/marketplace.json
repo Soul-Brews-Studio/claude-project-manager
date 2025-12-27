@@ -1,0 +1,19 @@
+{
+  "name": "claude-project-manager",
+  "version": "1.0.0",
+  "description": "Project lifecycle management: learn, incubate, create repos",
+  "author": "Soul-Brews-Studio",
+  "homepage": "https://github.com/Soul-Brews-Studio/claude-project-manager",
+  "plugins": [
+    {
+      "name": "project-manager",
+      "description": "Track and manage external repos. Commands: /project learn, /project incubate, /project create",
+      "commands": [
+        ".claude/commands/project.md"
+      ],
+      "skills": [
+        ".claude/skills/project-manager"
+      ]
+    }
+  ]
+}
