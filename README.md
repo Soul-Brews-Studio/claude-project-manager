@@ -15,20 +15,42 @@ Claude Code plugin for project lifecycle management.
 
 ## Installation
 
-Add to your Claude Code settings:
+### Option 1: Interactive UI (Recommended)
+
+```bash
+# First, add this repo as a marketplace
+/plugin marketplace add Soul-Brews-Studio/claude-project-manager
+
+# Then install via the plugin manager
+/plugin
+# Navigate to Discover tab → Select project-manager → Install
+```
+
+### Option 2: CLI Commands
+
+```bash
+# Add marketplace
+/plugin marketplace add Soul-Brews-Studio/claude-project-manager
+
+# Install plugin
+/plugin install project-manager@claude-project-manager
+```
+
+### Option 3: Direct Settings
+
+Add to `~/.claude/settings.json` (user) or `.claude/settings.json` (project):
 
 ```json
 {
-  "plugins": [
+  "plugins": {
+    "project-manager@claude-project-manager": {
+      "enabled": true
+    }
+  },
+  "pluginMarketplaces": [
     "Soul-Brews-Studio/claude-project-manager"
   ]
 }
-```
-
-Or install via Claude Code CLI:
-
-```bash
-claude plugins add Soul-Brews-Studio/claude-project-manager
 ```
 
 ## How It Works
